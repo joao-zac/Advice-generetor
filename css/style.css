@@ -1,0 +1,100 @@
+:root{
+
+--color-Light-Cyan: hsl(193, 38%, 86%);
+--color-Neon-Green: hsl(150, 100%, 66%);
+
+--color-Grayish-Blue: hsl(217, 19%, 38%);
+--color-Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--color-Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--color-Dark-Blue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-Dark-Grayish-Blue);
+    border-radius: 10px;
+    position: relative;
+}
+
+.attribution{
+    margin-top: 4rem;
+}
+
+.quote-id{
+    color: var(--color-Neon-Green);
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding: 35px 0 20px 0; 
+}
+
+.quote-txt{
+    color: var(--color-Light-Cyan);
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    width: 17em;
+    padding-bottom: 25px;
+}
+
+.hr{
+    padding: 5px 50px 60px 50px;
+}
+
+.hr-mobile{
+    display: none;
+}
+
+button{
+    border-radius: 100%;
+    padding: 14px 16px;
+    border-width: 0;
+    background-color: var(--color-Neon-Green);
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+button :hover{
+    cursor: pointer;
+}
+
+@media (max-width: 590px){
+    .quote-txt{
+        font-size: 19px;
+        padding: 0 10px;
+    }
+
+    .quote-id{
+        font-size: 12px;
+    }
+
+    .hr-mobile{
+        display: block;
+    }
+    
+    .hr-desktop{
+        display: none;
+    }
+
+    .hr{
+        padding: 15px 0px 60px 0px;
+    }
+
+} 
